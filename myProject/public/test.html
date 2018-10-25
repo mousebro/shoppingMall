@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.js"></script>
+    <style>
+        ul,li,button{margin: 0px;padding:0;}
+        ul{list-style-type:none;}
+        .divdePage{
+            display: flex;
+            cursor: pointer;
+        }
+        .divdePage>input{
+            width: 30px;
+            margin: 0 5px;
+            text-align: center;
+            border: 1px solid lightblue;
+            border-radius: 3px;
+        }
+        .divdePage>ul>li:hover{
+            box-shadow: 0 0 5px #ccc;
+        }
+        .divdePage>ul>li:first-child{
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        .divdePage>ul>li:last-child{
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .divdePage>ul>li{
+            float: left;
+            padding:5px 10px;
+            border:1px solid lightblue;
+            
+        }
+        .divdePage>ul>li:not(:last-child){
+            border-right: none;
+        }
+        .divdePage>ul>li:last-child{
+            border-right:1px solid lightblue; 
+        }
+
+        .active{
+            border: none !important;
+            border-left:1px solid lightblue !important; 
+        }
+        .disabled{
+            background: #eee;
+        }
+        .disabled:hover{
+            box-shadow: none !important;
+        }
+        [data-into=jumpPage]{
+           padding: 5px 15px;
+           border-radius: 3px;
+           outline: none;
+           border: none;
+           cursor: pointer;
+           background: lightblue;
+           color: #fff;
+        }
+        [data-into=jumpPage]:hover{
+            background: orange;
+        }
+        .divdePage>span{
+            display: inline-block;
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="divdePage" data-into="divdepage" >
+        <ul>
+            <li data-into="prevPageBtn">上一页</li>
+            <li pno="1">1</li>
+            <li class="active" pno="2">2</li>
+            <li pno="3">3</li>
+            <li pno="4">4</li>
+            <li  data-into="nextPageBtn">下一页</li>
+        </ul>
+        <span>&nbsp;跳转到</span>
+       <input type="text" data-into="pageNum" value="1">
+        <button data-into="jumpPage">提交</button>
+    </div>
+    <script>    
+        $divdePage = $("[data-into='divdepage']")
+        $pageLi = $(".divdePage>ul>li:not(:first-child):not(:last-child)")
+    
+        $divdePage.on("click","li",function(e){
+            var $this = $(this)
+            if($this.attr("data-into")=="nextPageBtn"){
+                var $activePage = $this.siblings(".active")
+                if($activePage.attr("pno") < $pageLi.length){
+                    $activePage.removeClass("active")
+                    $activePage.next().addClass("active")
+                    $("[data-into='prevPageBtn']").removeClass("disabled")
+                    $("[data-into='nextPageBtn']").removeClass("disabled")
+                    if($activePage.attr("pno") == $pageLi.length-1){
+                        $("[data-into='nextPageBtn']").addClass("disabled")
+                    }
+                }
+            }else if($this.attr("data-into")=="prevPageBtn"){
+                var $activePage = $this.siblings(".active")
+                if($activePage.attr("pno") > 1){
+                    $activePage.removeClass("active")
+                    $activePage.prev().addClass("active")
+                    $("[data-into='prevPageBtn']").removeClass("disabled")
+                    $("[data-into='nextPageBtn']").removeClass("disabled")
+                    if($activePage.attr("pno") == 2){
+                        $("[data-into='prevPageBtn']").addClass("disabled")
+                    }
+                }
+            }else{
+                $("[data-into='prevPageBtn']").removeClass("disabled")
+                $("[data-into='nextPageBtn']").removeClass("disabled")
+                $this.siblings().removeClass("active")
+                $this.addClass("active")
+                if($this.attr("pno")==1)
+                    $("[data-into='prevPageBtn']").addClass("disabled")
+                else if($this.attr("pno")== $pageLi.length)
+                    $("[data-into='nextPageBtn']").addClass("disabled")
+            }
+            
+        })
+    </script>
+</body>
+</html>
