@@ -1,0 +1,139 @@
+/*购物步骤*/
+.shopping_procedure_contain{
+	padding:113px 0;
+	height: 470px;
+	background:url(../images/new4.jpg) no-repeat ;
+	background-size: cover;
+	margin-bottom: 90px;
+}
+.all_contian .shopping_procedure{
+	height:244px;
+	width: 255px;
+	float: left;
+	margin: 0 22px;
+	text-align: center;
+
+}
+.shopping_procedure:before{
+	display: table;
+	content: "";
+}
+.shopping_procedure .glyphicon-user:before{
+	content:"\e008";
+}
+.shopping_procedure .glyphicon-ok:before{
+	content:"\e013";
+}
+.shopping_procedure .glyphicon-credit-card:before{
+	content:"\e177";
+}
+.shopping_procedure>span{
+	background: #FDA30E;
+	padding: 24px 24px;
+	border-radius: 100%;
+	font-size: 24px;
+	color: #f3f3f3;
+	margin-top: 50px;
+}
+.shopping_procedure h4{
+	color:#f3f3f3;
+	margin:25px 0 ;
+}
+.shopping_procedure h3{
+	margin-top: 150px;
+	color:#FDA30E ;
+}
+.shopping_procedure p{
+	color:#bbbbbb;
+}
+
+/*页尾*/
+/*左部信息框*/
+footer .all_contian .footer_left_contain {
+	width: 285px;
+	margin: 0 15px;
+	float: left;
+}
+footer .all_contian .footer_left_contain p{
+	margin-top: 22px;
+	line-height:28px;
+	color:#bbbbbb;
+}
+footer .all_contian .footer_right_contain {
+	width: 855px;
+	float: right;
+}
+footer .all_contian .footer_right_contain .for_newsletter{
+	height: 52px;
+	width: 825px;
+}
+
+footer .all_contian .footer_right_contain .for_newsletter h3{
+	padding: 12px 0;
+}
+footer .all_contian .footer_right_contain .for_newsletter form{
+	float: right;
+	height: 50px;
+	width: 380px;
+
+}
+footer .all_contian .footer_right_contain .for_newsletter form input{
+	border: none;
+	outline: none;
+	padding: 13px 20px 14px 20px;
+}
+footer .all_contian .footer_right_contain .for_newsletter form .email_submit_btn{
+	float: right;
+	background: #FDA30E;
+	width:90px;
+	color: #f8f8f8;
+	border: 1px solid #FDA30E;
+	transition: all .4s linear ;
+}
+footer .all_contian .footer_right_contain .for_newsletter form .email_submit_btn:after{
+	content: "";
+	display: block;
+}
+footer .all_contian .footer_right_contain .for_newsletter form .email_submit_btn:hover{
+	background: #000000;
+	border: 1px solid #000000;
+}
+footer .all_contian .footer_right_contain .for_newsletter form .email_text {
+	width:290px;
+	border: 1px solid #dddddd;
+}
+footer .all_contian .footer_right_contain .new_infomation{
+	margin-top: 100px;
+	float: left;
+	width:275px;
+	margin-left: 10px;
+}
+footer .all_contian .footer_right_contain .new_infomation h4{
+	margin-bottom: 25px;
+	color: #FDA30E;
+}
+footer .all_contian .footer_right_contain .new_infomation ul li{
+	color: #848484;
+	line-height: 28px;
+}
+footer .all_contian .footer_right_contain .new_infomation ul li a{
+	color: #848484;
+}
+footer .all_contian .footer_right_contain .information_share_contain ul{
+	width: 100%;
+}
+footer .all_contian .footer_right_contain .information_share_contain ul li{
+	float: left;
+}
+footer .all_contian .footer_right_contain .information_share_contain ul li a img{
+	width: 68px;
+	height:54px;
+	margin-bottom:5px;
+	margin-left: 5px;
+}
+footer .all_contian .footer_copyRight{
+	margin-top: 62px;
+	margin-bottom: 90px;
+	text-align: center;
+}
+
