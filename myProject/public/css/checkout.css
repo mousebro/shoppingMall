@@ -1,0 +1,119 @@
+section div.pageHead {
+  width: 100%;
+  height: 217px;
+  text-align: center;
+  line-height: 217px;
+  background: url(../images/ba2.jpg) no-repeat center;
+  background-size: cover;
+  color: #FDA30E;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 90px; }
+
+section .allContain {
+  width: 1200px;
+  margin: 0 auto 90px; }
+  section .allContain > h3 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 78px; }
+  section .allContain > table {
+    width: 100%; }
+    section .allContain > table > thead tr th {
+      padding: 7px;
+      background: #FDA30E;
+      color: #fff;
+      text-align: center;
+      font-size: 17px;
+      border-right: 1px solid #cdcdcd; }
+      section .allContain > table > thead tr th:nth-child(1), section .allContain > table > thead tr th:nth-child(5) {
+        width: 10%; }
+      section .allContain > table > thead tr th:nth-child(2) {
+        width: 30%; }
+      section .allContain > table > thead tr th:nth-child(3), section .allContain > table > thead tr th:nth-child(4) {
+        width: 20%; }
+      section .allContain > table > thead tr th:nth-child(6) {
+        width: 10%; }
+    section .allContain > table > tbody tr td {
+      text-align: center;
+      padding: 7px;
+      border: 1px solid #cdcdcd;
+      overflow: hidden; }
+      section .allContain > table > tbody tr td:nth-child(1) div {
+        background: url(../images/close_1.png) no-repeat center center;
+        height: 28px;
+        width: 28px;
+        margin: 0 auto;
+        cursor: pointer; }
+      section .allContain > table > tbody tr td:nth-child(2) a img {
+        width: 126px;
+        height: 144px; }
+      section .allContain > table > tbody tr td:nth-child(3) > div {
+        height: 40px; }
+        section .allContain > table > tbody tr td:nth-child(3) > div > span, section .allContain > table > tbody tr td:nth-child(3) > div button {
+          box-sizing: border-box;
+          display: inline-block;
+          height: 40px;
+          width: 40px;
+          line-height: 40px;
+          cursor: pointer;
+          text-align: center;
+          vertical-align: middle;
+          background: #fff;
+          border: 1px solid #b2b2b2; }
+          section .allContain > table > tbody tr td:nth-child(3) > div > span:nth-child(1), section .allContain > table > tbody tr td:nth-child(3) > div > span:nth-child(3), section .allContain > table > tbody tr td:nth-child(3) > div button:nth-child(1), section .allContain > table > tbody tr td:nth-child(3) > div button:nth-child(3) {
+            color: #FDA30E;
+            font-size: 30px; }
+            section .allContain > table > tbody tr td:nth-child(3) > div > span:nth-child(1):hover, section .allContain > table > tbody tr td:nth-child(3) > div > span:nth-child(3):hover, section .allContain > table > tbody tr td:nth-child(3) > div button:nth-child(1):hover, section .allContain > table > tbody tr td:nth-child(3) > div button:nth-child(3):hover {
+              background: rgba(0, 0, 0, 0.1); }
+          section .allContain > table > tbody tr td:nth-child(3) > div > span:nth-child(2), section .allContain > table > tbody tr td:nth-child(3) > div button:nth-child(2) {
+            color: #000;
+            font-size: 18px; }
+      section .allContain > table > tbody tr td:nth-child(4), section .allContain > table > tbody tr td:nth-child(5), section .allContain > table > tbody tr td:nth-child(6) {
+        font-size: 14px; }
+  section .allContain .shoppingCartFooter {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    section .allContain .shoppingCartFooter .backGoshopping {
+      height: 100%; }
+      section .allContain .shoppingCartFooter .backGoshopping div {
+        background: #202020;
+        padding: 10px 30px; }
+        section .allContain .shoppingCartFooter .backGoshopping div a {
+          color: #fff;
+          text-decoration: none; }
+        section .allContain .shoppingCartFooter .backGoshopping div:hover {
+          background: #FDA30E; }
+    section .allContain .shoppingCartFooter .shoppingBacket {
+      border: 1px solid #cdcdcd; }
+      section .allContain .shoppingCartFooter .shoppingBacket h4 {
+        background: #FDA30E;
+        color: #fff;
+        text-align: center;
+        margin: 0 0 16px;
+        padding: 1rem 9rem; }
+      section .allContain .shoppingCartFooter .shoppingBacket ul {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 4px 25px; }
+        section .allContain .shoppingCartFooter .shoppingBacket ul li {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1em; }
+          section .allContain .shoppingCartFooter .shoppingBacket ul li span, section .allContain .shoppingCartFooter .shoppingBacket ul li i {
+            color: #999; }
+          section .allContain .shoppingCartFooter .shoppingBacket ul li:last-child {
+            padding-top: 1em;
+            border-top: 1px solid #cdcdcd; }
+          section .allContain .shoppingCartFooter .shoppingBacket ul li:last-child {
+            justify-content: flex-end; }
+            section .allContain .shoppingCartFooter .shoppingBacket ul li:last-child button {
+              outline: none;
+              border: 0;
+              padding: .5rem 3rem;
+              background: #202020;
+              color: #fff; }
+              section .allContain .shoppingCartFooter .shoppingBacket ul li:last-child button:hover {
+                background: #FDA30E; }
