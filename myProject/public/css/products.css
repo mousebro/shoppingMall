@@ -1,0 +1,192 @@
+section {
+  width: 1200px;
+  margin: 90px auto; }
+  section #productContian {
+    width: 75%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    section #productContian .latest_designs_product {
+      float: left;
+      height: 400px;
+      width: 255px;
+      text-align: center;
+      border: 1px solid #C8C8C8;
+      box-shadow: 0 0 5px 2px #ccc;
+      position: relative;
+      overflow: hidden;
+      margin: 15px 22px; }
+      section #productContian .latest_designs_product .product_name {
+        color: #FDA30E;
+        font-size: 18px;
+        text-decoration: none; }
+      section #productContian .latest_designs_product .product_image_contain {
+        position: relative; }
+        section #productContian .latest_designs_product .product_image_contain img {
+          display: block;
+          position: relative;
+          width: 255px;
+          height: 255px;
+          box-sizing: border-box;
+          padding: 52px 50px 20px 50px;
+          -webkit-perspective: 150px;
+          perspective: 150px;
+          -webkit-transition: transform .8s linear .2s;
+          transition: transform .8s linear .2s;
+          -moz-transition: transform .8s linear .2s;
+          -IE-transition: transform .8s linear .2s; }
+        section #productContian .latest_designs_product .product_image_contain:hover img {
+          transform: rotateY(180deg);
+          transform: rotateY(-180deg); }
+        section #productContian .latest_designs_product .product_image_contain .product_tag {
+          position: absolute;
+          padding: 0 10px 1px 10px;
+          background: #868688;
+          color: #ffffff;
+          top: 0;
+          right: 0;
+          z-index: 2; }
+        section #productContian .latest_designs_product .product_image_contain:hover .wrap_container {
+          top: 200px;
+          opacity: 1; }
+        section #productContian .latest_designs_product .product_image_contain .wrap_container {
+          display: block;
+          padding: 15px;
+          width: 255px;
+          position: absolute;
+          color: #ffffff;
+          background: #000000;
+          top: 0px;
+          right: 0px;
+          z-index: 1;
+          opacity: 0;
+          transition-property: top,opacity;
+          transition-duration: .8s;
+          transition-timing-function: ease-out;
+          /*	-webkit-transition:all .8s ease-out .2s;
+                    -moz-transition:all .8s ease-out .2s;*/
+          cursor: pointer; }
+          section #productContian .latest_designs_product .product_image_contain .wrap_container:hover {
+            background: #FDA30E;
+            color: #f8f8f8; }
+      section #productContian .latest_designs_product .product_tag {
+        position: absolute;
+        padding: 0 10px 1px 10px;
+        background: #868688;
+        color: #ffffff;
+        top: 0;
+        right: 0;
+        z-index: 2; }
+      section #productContian .latest_designs_product .designs_product_detail .product_price {
+        margin: 2px 10px 2px 0; }
+      section #productContian .latest_designs_product .designs_product_detail > div:nth-child(3) {
+        display: inline-block;
+        border: 1px solid #eee;
+        border-radius: 5px; }
+        section #productContian .latest_designs_product .designs_product_detail > div:nth-child(3) input {
+          width: 30px;
+          height: 30px;
+          outline: none;
+          border: none;
+          text-align: center; }
+        section #productContian .latest_designs_product .designs_product_detail > div:nth-child(3) button {
+          width: 25px;
+          height: 30px;
+          box-sizing: border-box;
+          text-align: center;
+          outline: none;
+          color: #fff;
+          border: 1px solid #ccc; }
+          section #productContian .latest_designs_product .designs_product_detail > div:nth-child(3) button:first-child {
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px; }
+          section #productContian .latest_designs_product .designs_product_detail > div:nth-child(3) button:last-child {
+            border-bottom-right-radius: 3px;
+            border-top-right-radius: 3px; }
+          section #productContian .latest_designs_product .designs_product_detail > div:nth-child(3) button:hover {
+            background: #FDA30E; }
+      section #productContian .latest_designs_product a.itemBtn {
+        display: inline-block;
+        outline: 0;
+        background: #FDA30E;
+        border-radius: 3px;
+        width: 90px;
+        padding: 7px 2px;
+        text-decoration: none;
+        color: #fff;
+        margin: 20px auto 0;
+        position: relative;
+        text-align: center;
+        font-size: 12px; }
+        section #productContian .latest_designs_product a.itemBtn:before {
+          content: "";
+          position: absolute;
+          border-radius: 3px;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          border: 3px solid #FDA30E;
+          -webkit-transition-property: top,left,bottom,right;
+          -webkit-transition-duration: .2s;
+          -webkit-transition-timing-function: linear; }
+        section #productContian .latest_designs_product a.itemBtn:hover:before {
+          top: -5px;
+          left: -5px;
+          bottom: -5px;
+          right: -5px; }
+  section #shoppingCart {
+    width: 25%; }
+  section .divdePage {
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    cursor: pointer; }
+    section .divdePage > input {
+      width: 30px;
+      margin: 0 5px;
+      text-align: center;
+      border: 1px solid lightblue;
+      border-radius: 3px; }
+    section .divdePage > ul > li {
+      float: left;
+      padding: 5px 10px;
+      border: 1px solid lightblue; }
+      section .divdePage > ul > li:hover {
+        box-shadow: 0 0 5px #ccc; }
+      section .divdePage > ul > li:first-child {
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px; }
+      section .divdePage > ul > li:last-child {
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        border-right: 1px solid lightblue; }
+      section .divdePage > ul > li:not(:last-child) {
+        border-right: none; }
+  section span {
+    display: inline-block;
+    padding: 5px 5px; }
+  section [data-into=jumpPage]:hover {
+    background: orange; }
+
+.active {
+  border: none !important;
+  border-left: 1px solid lightblue !important; }
+
+.disabled {
+  background: #eee; }
+  .disabled:hover {
+    box-shadow: none !important; }
+
+[data-into=jumpPage] {
+  padding: 5px 20px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: lightblue;
+  color: #fff; }
+
+[data-into=jumpPage]:hover {
+  background: orange; }
