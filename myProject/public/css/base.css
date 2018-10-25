@@ -1,0 +1,136 @@
+h1,h2,h3,h4,h5,h6,ul,li,ol,dl,body,p{margin:0;padding:0;border: 0;}
+a{text-decoration:none;}
+a:hover{
+	text-decoration: none;
+}
+body{font-size:16px;}
+li{list-style:none;}
+/*折扣列表*/
+.all_contian .discount_contain{
+	width: 400px;
+	height: 480px;
+	box-sizing: border-box;
+	float: left;
+}
+.discount_contain>div{
+	height: 240px;
+	width:400px;
+	box-sizing: border-box;
+}
+.discount_contain .discount_mobiles{
+	color: #ffffff;
+	position: relative;
+	overflow: hidden;
+}
+.discount_contain>div .discount_mobiles_addCart{
+	height: 100px;
+	width: 140px;
+	margin-top:40px;
+	margin-left: 120px;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.8s linear 0.2s;
+}
+.discount_contain>div .discount_mobiles_addCart h3{
+	font-size: 35px;
+	color: #FDA30E;
+	margin-bottom: 3px;
+}
+.discount_contain>div .discount_mobiles_addCart p{
+	font-size: 20px;
+}
+.discount_contain>div .discount_mobiles_addCart hr{
+	margin: 8px 0;
+}
+.discount_contain>div .discount_mobiles_addCart a{
+	padding: 6px 2px;
+	width: 100px;
+	font-size: 12px;
+	margin-top: 30px;
+}
+.discount_contain>div  .discount_contain_pic{
+	position: absolute;
+	width: 400px;
+	height: 240px;
+	z-index: -2;
+	transition: all 1.2s linear 0.2s;
+}
+/*百叶窗效果*/
+.discount_contain_cover{
+	position: absolute;
+	width: 400px;
+	height: 240px;
+	z-index: -1;
+}
+.discount_contain .discount_contain_cover li{
+	width: 100px;
+	height: 240px;
+	float: left;
+	background:#000000;
+	opacity: 0.3;
+	transition: all 0.8s linear 0.2s;
+}
+/*鼠标滑过 背景图被拉近*/
+.discount_contain .discount_mobiles:hover .discount_contain_pic{
+	transform: scale(1.7);
+}
+.discount_contain .discount_mobiles:hover .discount_mobiles_addCart{
+	opacity: 1;
+}
+.discount_contain .discount_mobiles:hover .discount_contain_cover>li{
+	transform:scaleX(0) ;
+}
+/*打折栏 商品文字详情*/
+.discount_mobiles_detail{
+	background-color: #f7f7f7;
+	box-sizing:border-box;
+}
+.discount_mobiles_detail:before{
+	content:"";
+	display:table;
+}
+.discount_mobiles_detail h3{
+	margin-top: 50px;
+	text-align: center;
+}
+.discount_mobiles_detail h3 span{
+	font-size:51px;
+	color: #FDA30E;
+	margin: 15px 0;
+	display: block;
+}
+#discount_contain_right{
+	height:480px;
+}
+#discount_contain_right img,.discount_contain_cover {
+	height: 480px;
+}
+#discount_contain_right .discount_contain_cover>li{
+	height: 480px;
+}
+#discount_contain_right .discount_mobiles_addCart{
+	margin-top: 220px;
+}
+.discount_contain_list:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+div.discount_contain_list{
+	margin:0 auto 90px;
+}
+
+
+/*头部标题*/
+.page-header{
+    background: url(../images/ba2.jpg) no-repeat center ;
+    background-size: cover;
+    min-height: 217px;
+    padding-top: 85px;
+    border: 0;
+}
+.page-header h3{
+    text-align: center;
+    color: #FDA30E;
+    font-size: 48px;
+}
