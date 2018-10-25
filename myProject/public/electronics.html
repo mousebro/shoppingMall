@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/electronics.css">
+</head>
+<body>
+    <!--头部导航栏-->
+    <div id="header_contain"></div>
+    <div class="page-header">
+        <h3>电子数码</h3>
+    </div>
+    <section class="electronics">
+        <div class="all_contian discount_contain_list">
+			<div class="discount_contain">
+				<div class="discount_mobiles">
+					<img src="images/p1.jpg" alt="" class="discount_contain_pic"/>
+					<ul class="discount_contain_cover">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="discount_mobiles_addCart">
+
+						<h3>手机</h3>
+						<hr/>
+						<p>5000&yen;</p>
+						<hr/>
+						<a href="javascript:void(0)" class="itemBtn">购买</a>
+					</div>
+				</div>
+				<div class="discount_mobiles_detail">
+					<h3 class="detail_text">
+						买一送一
+						<span>branded</span>
+						手表
+					</h3>
+				</div>
+			</div>
+			<div class="discount_contain">
+				<div class="discount_mobiles_detail">
+					<h3 class="detail_text">
+						5折-优惠
+						<span>打折</span>
+						手机
+					</h3>
+				</div>
+				<div class="discount_mobiles">
+					<img src="images/p2.jpg" alt="" class="discount_contain_pic"/>
+					<ul class="discount_contain_cover">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="discount_mobiles_addCart">
+						<h3>手表</h3>
+						<hr/>
+						<p>2500&yen;</p>
+						<hr/>
+						<a href="javascript:void(0)" class="itemBtn">购买</a>
+					</div>
+				</div>
+			</div>
+			<div class="discount_contain " >
+				<div class="discount_mobiles" id="discount_contain_right">
+					<img src="images/p4.jpg" alt="" class="discount_contain_pic"/>
+					<ul class="discount_contain_cover">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="discount_mobiles_addCart">
+						<h3>鞋子</h3>
+						<hr/>
+						<p>2500&yen;</p>
+						<hr/>
+						<a href="javascript:void(0)" class="itemBtn">购买</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+    <!--footer-->
+    <div id="footer_contain"></div>
+</body>
+    <script>
+        $("#header_contain").load("header.html")
+        $("#footer_contain").load("footer.html")
+    </script>
+</html>
