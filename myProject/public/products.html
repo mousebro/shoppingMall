@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="js/bootstrap-3.1.1.min.js">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/products.css">
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <header></header>
+    <section>
+        <div id="productContian">
+
+            <div style="clear:both"></div>
+
+        </div>
+        <div class="divdePage" data-into="divdepage" id="divdePageA">
+            <ul>
+                <li data-into="prevPageBtn">上一页</li>
+                 <li  data-into="nextPageBtn">下一页</li>
+            </ul>
+            <span data-into="productCount">共20条数据</span>
+            <span>&nbsp;跳转到</span>
+           <input type="text" data-into="pageNum" value="1">
+           <span>页</span>
+            <button data-into="jumpPage">提交</button>
+        </div>
+        <div id="shoppingCart"></div>
+    </section>
+    <footer></footer>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/products.js"></script>
+<script>
+    $("header").load("header.html")
+    $("footer").load("footer.html")
+
+</script>
+</html>
