@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<script type="text/javascript" src="js/common.js"></script>
+	 <script type="text/javascript" src="js/index.js"></script>	 
+	<!-- <script src="js/bootstrap-3.1.1.min.js"></script> -->
+	<link rel="stylesheet" href="css/base.css">
+	<script src="js/jquery-1.11.3.js"></script>
+ </head>
+ <body>
+  	<div id="index_header">		
+  	</div>
+	<!--导航栏-->
+
+  	<!--banner图-->
+	<div class="banner_container">
+		<span id="banner_btnLeft" class="banner_btn"></span>
+		<span id="banner_btnRight" class="banner_btn"></span>
+		<a href="single.html" class="banner_img"></a>
+		<a href="single.html" class="banner_img"></a>
+		<a href="single.html" class="banner_img"></a>
+		<a href="single.html" class="banner_img"></a>
+	</div>
+	<section>
+		<!--新品上市-->
+		<div class="new_arrival">
+			<h3><span>新品</span><i>上市</i></h3>
+			<p>东篱半世蹉跎，竹里游亭，小宇婆娑。有个池塘，醒时渔笛，醉后渔歌。</p>
+			<div class="new_arrival_product">
+				<div class="arrival_left">
+					<img src="images/wed1.jpg">
+					<div class="wed_band">
+						<h4>婚纱集合</h4>
+						<h5>低至5折</h5>
+						<p><del><i>&yen;500</i></del>&nbsp;<span>&yen;250.00</span></p>
+						<a href="javascript:void(0)" class="itemBtn">添加到购物车</a>
+					</div>
+				</div>
+				<div class="arrival_center">
+					<div class="new_levis_contain">
+						<div class="new_levis">
+							<img src="images/levis1.png" alt=""/>
+							<div class="mid-text">
+								<h4>高达40%的折扣</h4>
+								<a href="javascript:void(0)" class="itemBtn">购买</a>
+							</div>
+						</div>
+					</div>
+					<div class="new_levis_contain">
+						<div class="new_levis">
+							<div class="mid-text">
+								<h4>高达40%的折扣</h4>
+								<a href="javascript:void(0)" class="itemBtn">购买</a>
+							</div>
+							<img src="images/dig.jpg" alt=""/>
+						</div>
+					</div>
+
+				</div>
+				<div class="arrival_right">
+					<img src="images/wed2.jpg">
+					<div class="wed_band">
+						<h5>秋季/冬季</h5>
+						<h4>男士</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--折扣-->
+		<div class="all_contian discount_contain_list">
+			<div class="discount_contain">
+				<div class="discount_mobiles">
+					<img src="images/p1.jpg" alt="" class="discount_contain_pic"/>
+					<ul class="discount_contain_cover">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="discount_mobiles_addCart">
+						<h3>手机</h3>
+						<hr/>
+						<p>5000&yen;</p>
+						<hr/>
+						<a href="javascript:void(0)" class="itemBtn">购买</a>
+					</div>
+				</div>
+				<div class="discount_mobiles_detail">
+					<h3 class="detail_text">
+						买一送一
+						<span>branded</span>
+						手表
+					</h3>
+				</div>
+			</div>
+			<div class="discount_contain">
+				<div class="discount_mobiles_detail">
+					<h3 class="detail_text">
+						5折-优惠
+						<span>打折</span>
+						手机
+					</h3>
+				</div>
+				<div class="discount_mobiles">
+					<img src="images/p2.jpg" alt="" class="discount_contain_pic"/>
+					<ul class="discount_contain_cover">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="discount_mobiles_addCart">
+						<h3>手表</h3>
+						<hr/>
+						<p>2500&yen;</p>
+						<hr/>
+						<a href="javascript:void(0)" class="itemBtn">购买</a>
+					</div>
+				</div>
+			</div>
+			<div class="discount_contain " >
+				<div class="discount_mobiles" id="discount_contain_right">
+					<img src="images/p4.jpg" alt="" class="discount_contain_pic"/>
+					<ul class="discount_contain_cover">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="discount_mobiles_addCart">
+						<h3>鞋子</h3>
+						<hr/>
+						<p>2500&yen;</p>
+						<hr/>
+						<a href="javascript:void(0)" class="itemBtn">购买</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--快速购物-->
+		<div class="all_contian">
+			<div class="product_ease">
+				<ul class="product_list" id="product_ease_list">
+					<li id="latest_product" class="item_active">最新上市</li>
+					<li id="special_offer">特惠优品</li>
+					<li id="product_collection">珍藏版</li>
+				</ul>
+				<div class="latest_designs_contain">
+					<!--每个商品单元-->
+			
+				</div>
+				<div class="special_offer_contain">
+					<!--每个商品单元-->
+
+				</div>
+				<div class="collections_contain">
+					<!--每个商品单元-->
+				</div>
+			</div>
+		</div>	
+	
+	</section>
+ 	<footer id="index_footer">
+	</footer>
+ </body>
+ <script>
+		$("#index_header").load("header.html");	
+		$("#index_footer").load("footer.html");
+ </script>
+ 
+</html>
