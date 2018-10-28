@@ -39,6 +39,7 @@ router.get("/checkout",(req,res)=>{
 router.get("/updateCart",(req,res)=>{
     var cid = req.query.cid;
     var pcount = req.query.pcount;
+    var uid = req.query.uid;
     res.writeHead(200,{
         "Content-Type" : "application/json;charset=utf-8",
         "Access-Control-Allow-Origin" : "*"
@@ -46,17 +47,35 @@ router.get("/updateCart",(req,res)=>{
     if(pcount>0){
         var sql1 = `UPDATE shoppingcart SET pcount=? WHERE cid=?`
         data = [pcount,cid]
-    }else{
+        pool.query(sql1,data,(err,result)=>{
+            if(err) throw err;
+            if(result.affectedRows>0){
+                res.write(JSON.stringify({code:200,msg:"修改成功"}))
+                res.end()
+            }
+        })
+    }else if(pcount==0){
         var sql1 = `DELETE FROM shoppingcart WHERE cid=?`
         data = cid
+        pool.query(sql1,data,(err,result)=>{
+            if(err) throw err;
+            if(result.affectedRows>0){
+                res.write(JSON.stringify({code:200,msg:"修改成功"}))
+                res.end()
+            }
+        })
+    }else if(pcount=="all"){
+        var sql1 = `DELETE FROM shoppingcart WHERE uid=?`
+        data = uid
+        pool.query(sql1,data,(err,result)=>{
+            if(err) throw err;
+            if(result.affectedRows>0){
+                res.write(JSON.stringify({code:200,msg:"全部删除"}))
+                res.end()
+            }
+        })
     }
-    pool.query(sql1,data,(err,result)=>{
-        if(err) throw err;
-        if(result.affectedRows>0){
-            res.write(JSON.stringify({code:200,msg:"修改成功"}))
-            res.end()
-        }
-    })
+
 })
 router.get("/addToCart",(req,res)=>{
     var pcount =parseInt( req.query.pcount);

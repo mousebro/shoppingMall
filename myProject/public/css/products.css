@@ -1,6 +1,6 @@
 section {
   width: 1200px;
-  margin: 90px auto; }
+  margin: 90px auto;position: relative;}
   section #productContian {
     width: 75%;
     box-sizing: border-box;
@@ -190,3 +190,137 @@ section {
 
 [data-into=jumpPage]:hover {
   background: orange; }
+
+
+
+/*购物车*/
+body,ul,li,h3,h6,a{
+  margin:0;
+  padding:0;
+  font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+a{
+  text-decoration: none;
+}
+#shoppintCart{
+  position: absolute;
+  top:0;
+  right: 0;
+  width:300px;
+  box-sizing: border-box;
+  margin-top:15px;
+ 
+}
+#shoppintCart>div{
+  width: 250px;
+  margin: 0 auto;
+}
+#shoppintCart>div>h3{
+  background: linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+  padding:8px 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-bottom: 5px;
+  color:#6c757d;
+  font-weight: thin; 
+}
+#shoppintCart>div>div{
+  padding:0 10px;
+}
+ #shoppintCart>div>ul{
+  width: 250px;
+  position: absolute;
+
+  right:25px;
+  z-index: 100;
+} 
+#shoppintCart>div>ul>li:first-child>a{
+  text-decoration: none;
+  color:#6c757d;
+}
+#shoppintCart>div>ul>li{
+  color:#6c757d;
+  list-style-type: none;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 10px;
+}
+#shoppintCart>div>ul>li:not(:last-child){
+  border-bottom: 1px solid #Fd753d;
+}
+#shoppintCart>div>ul>li:first-child{
+  background: linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#shoppintCart>div>ul>li:last-child{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height:50px;
+  background: #6c757d;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-around;
+  color:#fff;
+}
+#shoppintCart>div>ul>li:last-child:hover{
+  box-shadow: 0 0 5px #ccc;
+}
+#shoppintCart>div>ul>li:last-child>a{
+  color:#fafafa;
+  background:lightblue;
+  border-radius: 3px;
+  padding:0 5px;
+}
+#shoppintCart>div>ul>li:last-child>a:hover{
+  box-shadow: 0 0 5px #ccc;
+ 
+}
+#shoppintCart>div>ul>li:last-child>img{
+  height:60%;
+  margin:auto 0;
+}
+#shoppintCart>div>ul>li:last-child>span{
+  color:#fff;
+  font-size:20px;
+  font-weight: bold;
+  display:inline-block;
+}
+#shoppintCart>div>ul>li:not(:first-child):not(:last-child){
+  height:28px;
+  width:100%;
+  line-height: 28px;
+  font-size:12px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding:3px 0;
+
+}
+#shoppintCart>div>ul>li:not(:first-child):not(:last-child)>span:first-child{
+  width: 80px;
+  display: inline-block;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  padding: 0;
+  height:100%;
+}
+#shoppintCart>div>ul>li:not(:first-child):not(:last-child)>span:not(:first-child){
+  padding: 0;
+  height:100%;
+  vertical-align: top;
+
+}
+#shoppintCart>div>ul>li:not(:first-child):not(:last-child)>button{
+  color:red;
+  vertical-align: top;
+  box-sizing: border-box;
+  height: 100%;
+  line-height: 100%;
+    }
